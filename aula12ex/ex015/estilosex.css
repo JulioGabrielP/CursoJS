@@ -1,0 +1,29 @@
+body{
+ background-color: rgb(201, 194, 194);
+ font: normal 15pt Arial;
+}
+header{
+    color: rgb(153, 4, 4);
+    text-align: center;
+    text-shadow: 3px 2px black;
+}
+section{
+     background-color: rgb(242, 39, 39);;
+     border-radius: 10px ;
+     padding: 15px;
+     width: 500px;
+     margin: auto;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+
+}
+#dados{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+footer{
+    color: rgb(242, 39, 39);
+    text-align: center;
+    font-style: italic;
+}
+
+/*rgb(242, 39, 39) vermelho */

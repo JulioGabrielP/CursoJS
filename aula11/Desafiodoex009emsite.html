@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidades plus frase de motivação</h1>
+    Diga-nos qual seu país
+    <input type="text" name="país" id="país" >
+    <input type="button" value="pesquisar" onclick="apoiar()">
+
+    <DIV id="Msg"></DIV>
+    <script>
+        function apoiar() {
+        var nac = window.document.getElementById('país')
+        var msg = window.document.querySelector('div#Msg')
+        var país = nac.value.toUpperCase()
+        msg.innerHTML = `<p>Você é de: ${país}`
+         if(país=='BRASIL'){
+             msg.innerHTML += '<h2>Frase Motivacional:</h2><P> Então você tem de aguentar Bolsonaro como eu meu amigo, meus pêsames mas vai dar tudo certo.   </p>'
+         }
+         else{
+             msg.innerHTML += '<h3>Frase Motivacional:</h3>Então você é estrangeiro, espero que esteja lidando com a pandemia melhor do que nós amigo, <strong>FORÇA</strong> você não está só</p>'
+         }
+        }
+
+    </script>
+    
+</body>
+</html>
